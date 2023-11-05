@@ -1,0 +1,63 @@
+<coleg>
+  <nume>Baciu Petru-Rareș</nume>
+  <contact>
+    <email>baciur57@gmail.com</email>
+  </contact>
+  <educatie>
+    <citat>"Învățarea este singura comoară pe care nimeni nu o poate fura." - B.B. King</citat>
+    <institutie>
+        <nume>UTCN</nume>
+        <perioada>2023-2027</perioada>
+    </institutie>
+  </educatie>
+  <hobby-uri>
+    <hobby>Înnot</hobby>
+    <hobby>Fotbal</hobby>
+    <hobby>Scriere de poezii</hobby>
+    <hobby>Ieșiri în aer liber</hobby>
+  </hobby-uri>
+</coleg>
+
+<coleg>
+  <nume>Nicoară Paul-Nicolae</nume>
+  <contact>
+    <email>nicoarap2004@gmail.com</email>
+  </contact>
+  <educatie>
+    <citat>"Educația este cea mai puternică armă pe care o poți. folosi pentru a schimba lumea." - Nelson Mandela"</citat>
+    <institutie>
+        <nume>UTCN</nume>
+        <perioada>2023-2027</perioada>
+    </institutie>
+  </educatie>
+  <hobby-uri>
+    <hobby>Desen artistic</hobby>
+    <hobby>Cantat la chitara</hobby>
+    <hobby>Sport - Bedminton</hobby>
+    <hobby>Gatit</hobby>
+    <hobby>Sculptat</hobby>
+    <hobby>Voluntar activ in OSUT</hobby>
+    <hobby>Jocurile Video</hobby>
+    <hobby>Editare Foto-video</hobby>
+    <hobby>Cititul</hobby>
+  </hobby-uri>
+</coleg>
+
+<coleg>
+  <nume>Serban Luca Daniel</nume>
+  <contact>
+    <email>serban.luca2012@gmail.com</email>
+  </contact>
+  <educatie>
+    <citat>"Mă aștept ca educația pe care o primim să schimbe lumea."</citat>
+    <institutie>
+        <nume>UTCN</nume>
+        <perioada>2023-2027</perioada>
+    </institutie>
+  </educatie>
+  <hobby-uri>
+    <hobby>Sport</hobby>
+    <hobby>Music Producing</hobby>
+    <hobby>Meditare</hobby>
+  </hobby-uri>
+</coleg>

@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(238, 224, 192);
+    font-family: Helvetica;
+}
+
+h2 {
+    color:rgb(177, 141, 25);
+    font-size: 30px;
+}
+
+p {
+    color:rgb(147, 117, 17);
+}
+
+li {
+    color: rgb(177, 141, 25);
+    list-style-type:none;
+}
+
+tr {
+    color: rgb(177, 141, 25);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(118, 93, 12);
+}
+
+.fisa {
+    padding: 0px 20px;
+}
+
+.anul {
+    padding: 0px 20px;
+}
+
+#lista_pas {
+    margin-top: 50px;
+    font-size: large;
+    font-weight: 700;
+}
+
+table {
+    border: solid rgb(118, 93, 12);
+    padding: 10px;
+}
+
+ul {
+    border: solid rgb(118, 93, 12);
+    padding: 10px;
+    width: 200px;
+}
+
+img {
+    border-radius: 15%;
+    height: 250px;
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+img:hover{
+    transition: 0.5s;
+    transform:scale3d(1.12, 1.12, 1);
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#cuprins_title {
+    text-align: center;
+    color:goldenrod;
+}
+
+#cuprins_img {
+    height: 350px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+
+#cuprins_img:hover {
+    opacity: .9;
+    border-radius: 40px;
+    transform: scale3d(1, 1, 1);
+}
+
+.alta_viata {
+    display: flex;
+    align-items: center;
+}
+
+button{
+    margin-right: 550px;
+    height: 70px;
+    width: 180px;
+    border-radius: 20px;
+    font-size: 24px;
+    border: none;
+    color: rgb(118, 93, 12);
+    background-color: rgb(210, 196, 163);
+}
+
+button:hover{
+    transform: scale3d(1.3, 1.3, 1.3);
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}

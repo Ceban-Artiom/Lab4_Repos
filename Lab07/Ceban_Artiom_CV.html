@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceban Artiom CV</title>
+    <style>
+        body {
+    background-color: rgb(238, 224, 192);
+    font-family: Helvetica;
+}
+
+h2 {
+    color:rgb(177, 141, 25);
+    font-size: 30px;
+}
+
+p {
+    color:rgb(147, 117, 17);
+}
+
+li {
+    color: rgb(177, 141, 25);
+    list-style-type:none;
+}
+
+tr {
+    color: rgb(177, 141, 25);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(118, 93, 12);
+}
+
+.fisa {
+    padding: 0px 20px;
+}
+
+.anul {
+    padding: 0px 20px;
+}
+
+#lista_pas {
+    margin-top: 50px;
+    font-size: large;
+    font-weight: 700;
+}
+
+table {
+    border: solid rgb(118, 93, 12);
+    padding: 10px;
+}
+
+ul {
+    border: solid rgb(118, 93, 12);
+    padding: 10px;
+    width: 200px;
+}
+
+img {
+    border-radius: 15%;
+    height: 250px;
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+img:hover{
+    transition: 0.5s;
+    transform:scale3d(1.12, 1.12, 1);
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#cuprins_title {
+    text-align: center;
+    color:goldenrod;
+}
+
+#cuprins_img {
+    height: 350px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+
+#cuprins_img:hover {
+    opacity: .9;
+    border-radius: 40px;
+    transform: scale3d(1, 1, 1);
+}
+
+.alta_viata {
+    display: flex;
+    align-items: center;
+}
+
+button{
+    margin-right: 550px;
+    height: 70px;
+    width: 180px;
+    border-radius: 20px;
+    font-size: 24px;
+    border: none;
+    color: rgb(118, 93, 12);
+    background-color: rgb(210, 196, 163);
+}
+
+button:hover{
+    transform: scale3d(1.3, 1.3, 1.3);
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#verify_email{
+    margin-left: 80px;
+    margin-right: 400px;
+    height: 40px;
+    width: 190px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    color: rgb(118, 93, 12);
+    background-color: rgb(210, 196, 163);
+}
+
+#verify:hover{
+    transform: scale3d(1, 1, 1);
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#emailInput{
+    border: 1px solid rgb(118, 93, 12);
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 200px;
+    height: 20px;
+    background: rgb(227, 210, 153);
+}
+    </style>
+<body>
+    <h2>Curriculum Vitae</h2>
+    <p id="nume">Nume: Ceban</p>
+    <p>Prenume: Artiom</p>
+    <p>Email: artyom.tcheban2015@yandex.ru</p>
+    <div id="varsta">
+        Anul nașterii: 1990
+    </div>
+    <label for="emailInput">
+        Adresa de e-mail:
+    </label>
+    <input type="text" id="emailInput">
+    <button id="verify_email" onclick="validareEmail()">Verifică E-mail</button>
+    <p id="rezultatValidare"></p>
+    <div class="alta_viata">
+        <img id="img_de_profil" src="img/personal_photo.jpg" alt="Fotografia personala">
+        <button type="button" onclick="modifyContent()">Alta viata</button>
+    </div>
+    <p><br>Text reprezentativ: "Aștept de la educația universitară să îmi deschidă orizonturile, să mă provoace să gândesc critic, să îmi ofere oportunități de aprofundare a cunoștințelor și să mă ajute să dezvolt abilități practice relevante pentru cariera mea viitoare. Sper că universitatea va fi locul unde voi întâlni profesori inspirați și colegi pasionați, creând astfel un mediu propice pentru învățare și dezvoltare personală."</p>
+    <p><br>Dicsiplinele pe care doresc să le aprofund:</p>
+    <div>
+        <table>
+            <tr>
+                <th>Disciplina</th>
+                <th class="anul">Anul</th>
+                <th class="fisa">Fișa disciplină</th>
+            </tr>
+            <tr>
+                <td>Teoria transmiterii informației</td>
+                <td class="anul">Anul II</td>
+                <td class="fisa"><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/TstRo/33.pdf" title="Teoria transmiterii informației" target=_blank>Fișa disciplină</a></td>
+            </tr>
+            <tr>
+                <td>Arhitectura microprocesoarelor</td>
+                <td class="anul">Anul III</td>
+                <td class="fisa"><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/TstRo/31.pdf" title="Arhitectura microprocesoarelor" target=_blank>Fișa disciplină</a></td>
+            </tr>
+            <tr>
+                <td>Transmisii de date</td>
+                <td class="anul">Anul IV</td>
+                <td class="fisa"><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/TstRo/49_10.pdf" title="Transmisii de date" target=_blank>Fișa disciplină</a></td>
+            </tr>
+        </table>
+        <p id="lista_pas">Lista pasiunilor:</p>
+        <ul id="list">
+            <li id="pas1">Cânt la chitară</li>
+            <li id="pas2">Frecventez sala de sport</li>
+            <li id="pas3">Studiez limba engleză</li>
+        </ul>
+        <p><br>Paginile colegilor: <br></p>
+        <a href="Baciu_Petru_Rares.html">Baciu Petru-Rareș<br></a>
+        <a href="Nicoara_Paul_CV.html">Nicoară Paul-Nicolae<br></a>
+        <a href="Serban_Luca_Daniel_CV.html">Serban Luca Daniel<br><br></a>
+        <a href="Cuprins.html">Pagina de cuprins</a>
+    </div>
+    <script>
+        function modifyContent() {
+    var locDeMunca = document.getElementById("nume");
+    locDeMunca.innerHTML = "Inginer DevOps at Apple Inc.";
+
+    var realizari = document.getElementById("lista_pas");
+    realizari.innerHTML = "Realizările pe care dores să le obțin:";
+
+    var realizarea1 = document.getElementById("pas1");
+    realizarea1.innerHTML = "Participarea la diverse IT-proiecte";
+
+    var realizarea2 = document.getElementById("pas2");
+    realizarea2.innerHTML = "Cunoștințe aprofundate în domeniul arhitecturii calculatoarelor";
+
+    var realizarea3 = document.getElementById("pas3");
+    realizarea3.innerHTML = "Elaborarea propriilor articole științifice";
+
+    var ul_width = document.getElementById("list");
+    ul_width.style.width = '400px';
+
+    var img_alternativa = document.getElementById("img_de_profil");
+    img_alternativa.src = '/img/nebula.jpg';
+    img_alternativa.style.opacity = '0.8';
+    img_alternativa.style.border = '4px dashed darkblue';
+
+    var body = document.getElementsByTagName('body')[0];
+    body.style.backgroundColor = 'lightgray';
+
+    var paragraphs = document.getElementsByTagName('p');
+    for (var i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.color = 'darkblue';
+    }
+
+    var headings = document.getElementsByTagName('h2');
+    for (var i = 0; i < headings.length; i++) {
+        headings[i].style.color = 'darkblue';
+    }
+  }
+
+        var elementVarsta = document.getElementById('varsta');
+            var anulNasterii = 2004;
+
+            elementVarsta.addEventListener('mouseover', function() {
+                var anulCurent = new Date().getFullYear();
+                var varsta = anulCurent - anulNasterii;
+                elementVarsta.textContent = 'Anul nașterii: ' + anulNasterii + ' - Vârsta: ' + varsta + ' ani';
+            });
+
+            elementVarsta.addEventListener('mouseout', function() {
+                elementVarsta.textContent = 'Anul nașterii: ' + anulNasterii;
+            });
+
+        function validareEmail() {
+            var inputEmail = document.getElementById('emailInput').value;
+            var rezultatValidare = document.getElementById('rezultatValidare');
+
+            if (inputEmail.includes('@')) {
+                rezultatValidare.textContent = 'Adresa de e-mail este validă!';
+            } else {
+                rezultatValidare.textContent = 'Introduceți o adresă de e-mail validă!';
+            }
+        }
+    </script>
+</body>
+</html>
